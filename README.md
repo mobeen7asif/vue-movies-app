@@ -30,4 +30,10 @@ $ npm run serve
 - `scss` for UI development
 - `day.js` for date manipulation
 
-## APproach 
+## Steps I followed to build this 
+
+- Find out free api source which match my interest
+- Explore themoviedb apis on postmane and get their api to use it the app
+- Decided to build it on Vuejs
+- Build the basic UI
+- Integrated apis
