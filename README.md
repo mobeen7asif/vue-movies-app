@@ -24,6 +24,10 @@ $ npm run serve
  - [`day.js`](https://github.com/iamkun/dayjs)
 
 ## Notes
-* Built using  [`vue-cli`](https://github.com/vuejs/vue-cli) (Vue CLI 3)
 
-* Movies & TV shows data from [`The Movie DB API`](https://www.themoviedb.org/documentation/api). You need to signup to get a personal free key to start using the API.
+- `vuejs` Used Vuejs, a very light weight js library for developing SPA. It is very powerful feature wise and it is easy to learn also. I love to develop web apps in Vuejs. 
+- `vuex` for state management
+- `scss` for UI development
+- `day.js` for date manipulation
+
+## APproach 
