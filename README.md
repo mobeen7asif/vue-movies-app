@@ -21,7 +21,7 @@ $ npm run serve
 
 ## Api collection
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/1332593-aa3b676f-77e1-49e5-aa11-a794a39430f0?action=collection%2Ffork&collection-url=entityId%3D1332593-aa3b676f-77e1-49e5-aa11-a794a39430f0%26entityType%3Dcollection%26workspaceId%3De7292cda-3bd4-4913-bb51-a0735f33b913)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/1332593-aa3b676f-77e1-49e5-aa11-a794a39430f0?action=collection%2Ffork&collection-url=entityId%3D1332593-aa3b676f-77e1-49e5-aa11-a794a39430f0%26entityType%3Dcollection%26workspaceId%3De7292cda-3bd4-4913-bb51-a0735f33b913#?env%5BMovie%20app%20env%5D=W3sia2V5IjoiVVJMIiwidmFsdWUiOiJodHRwczovL2FwaS50aGVtb3ZpZWRiLm9yZy8zIiwiZW5hYmxlZCI6dHJ1ZSwidHlwZSI6ImRlZmF1bHQiLCJzZXNzaW9uVmFsdWUiOiJodHRwczovL2FwaS50aGVtb3ZpZWRiLm9yZy8zIiwic2Vzc2lvbkluZGV4IjowfSx7ImtleSI6IkFQSV9LRVkiLCJ2YWx1ZSI6IjE4Nzk1MzUzMDhlNzNhNWNmNTFkNWY5ZTQ1MWZkNDRlIiwiZW5hYmxlZCI6dHJ1ZSwidHlwZSI6ImRlZmF1bHQiLCJzZXNzaW9uVmFsdWUiOiIxODc5NTM1MzA4ZTczYTVjZjUxZDVmOWU0NTFmZDQ0ZSIsInNlc3Npb25JbmRleCI6MX1d)
 
 ## Docs Link
 
