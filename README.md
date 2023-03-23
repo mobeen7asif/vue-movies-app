@@ -22,3 +22,7 @@ $ npm run serve
 ## Api collection
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/1332593-aa3b676f-77e1-49e5-aa11-a794a39430f0?action=collection%2Ffork&collection-url=entityId%3D1332593-aa3b676f-77e1-49e5-aa11-a794a39430f0%26entityType%3Dcollection%26workspaceId%3De7292cda-3bd4-4913-bb51-a0735f33b913)
+
+## Docs Link
+
+https://docs.google.com/document/d/1DWM1fD3MiKNabPF8LcM-EjPHtNze4t4QU2Jbn6go1bk/edit?usp=sharing
