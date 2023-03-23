@@ -4,8 +4,8 @@
       v-for="(item, index) in results" 
       :key="index" 
       :item="item" 
-      :type="type" 
-      v-on='$listeners'/>
+      :type="type"
+      v-bind="$attrs"/>
   </ul>
 </template>
 

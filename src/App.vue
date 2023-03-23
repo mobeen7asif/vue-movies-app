@@ -21,6 +21,7 @@
 import AppNavigation from '@/components/AppNavigation.vue';
 import AppFooter from '@/components/AppFooter.vue';
 import AppModal from '@/components/AppModal.vue';
+import store from "@/store";
 
 export default {
   name: 'app',
@@ -40,7 +41,8 @@ export default {
   methods: {
     loadInitialData() {
       try {
-        this.$store.dispatch('getInitialData');
+        console.log('asdasd');
+        store.dispatch('getInitialData');
       } catch (e) {
         this.error = 'Error: configuration not loaded';
       }

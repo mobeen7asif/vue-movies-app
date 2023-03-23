@@ -1,10 +1,8 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
 import AppServices from '@/services/AppServices';
+import { createStore } from 'vuex'
 
-Vue.use(Vuex);
 
-export default new Vuex.Store({
+export default createStore({
   state: {
     baseUrl: '',
     itemInfo: {}
@@ -19,13 +17,14 @@ export default new Vuex.Store({
       state.baseUrl = baseUrl;
     },
     RESET_ITEM: state => {
-      Vue.set(state, 'itemInfo', {});
+      state.itemInfo = {};
+      // Vue.set(state, 'itemInfo', {});
     },
     LOAD_ITEM: (state, { type, info, cast }) => {
       const itemInfo = {
         type,
-        title: type == 'movie' ? info.title : info.name,
-        year: type == 'movie' ? info.release_date : info.first_air_date,
+        title: type === 'movie' ? info.title : info.name,
+        year: type === 'movie' ? info.release_date : info.first_air_date,
         overview: info.overview,
         homepage: info.homepage,
         genres: info.genres,
@@ -37,12 +36,14 @@ export default new Vuex.Store({
           .slice(0, 6)
           .join(', ')
       };
-      Vue.set(state, 'itemInfo', itemInfo);
+      state.itemInfo = itemInfo;
+      // Vue.set(state, 'itemInfo', itemInfo);
     }
   },
 
   actions: {
     getInitialData: async ({ commit }) => {
+      console.log('kkkk');
       const response = await AppServices.getConfiguration();
       commit('LOAD_CONF', response.data.images.secure_base_url);
     },

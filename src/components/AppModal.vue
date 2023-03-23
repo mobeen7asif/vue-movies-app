@@ -47,34 +47,36 @@
 </template>
 
 <script>
-import { mapState, mapGetters } from 'vuex';
 import dayjs from 'dayjs'
+import store from "@/store";
 
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: 'Modal',
   components: { },
   computed: {
-    ...mapState(['type', 'itemInfo']),
-    ...mapGetters(['imgPath']),
+    itemInfo() {
+      return store.state.itemInfo;
+    },
     showItemInfo() {
-      return !Object.keys(this.itemInfo).length ? false : true;
+      return !Object.keys(store.state.itemInfo).length ? false : true;
     },
     urlImg() {
-      return this.itemInfo.poster_path != null
-        ? `${this.imgPath}${this.itemInfo.poster_path}`
+      return store.state.itemInfo.poster_path != null
+        ? `${store.getters.imgPath}${store.state.itemInfo.poster_path}`
         : require('@/assets/images/poster-not-available.png');
     },
     genres() {
-      return this.itemInfo.genres.map(g => g.name.toUpperCase());
+      return store.state.itemInfo.genres.map(g => g.name.toUpperCase());
     },
     date(){
-      return (this.itemInfo.year) ? dayjs(this.itemInfo.year).format('MMM D, YYYY') : ''
+      return (store.state.itemInfo.year) ? dayjs(store.state.itemInfo.year).format('MMM D, YYYY') : ''
     },
     dateLabel() {
-      return this.itemInfo.type == 'movie' ? 'Release date' : 'First air date';
+      return store.state.itemInfo.type == 'movie' ? 'Release date' : 'First air date';
     },
     icon(){
-      return this.itemInfo.type == 'movie' ? 'film' : 'tv';
+      return store.state.itemInfo.type == 'movie' ? 'film' : 'tv';
     }
   },
   methods: {

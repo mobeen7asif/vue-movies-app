@@ -18,7 +18,9 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+// import { mapGetters } from 'vuex';
+
+import store from "@/store";
 
 export default {
   name: 'ItemCard',
@@ -27,10 +29,9 @@ export default {
     type: String
   },
   computed: {
-    ...mapGetters(['imgPath']),
     urlImg() {
       return this.item.poster_path != null
-        ? `${this.imgPath}${this.item.poster_path}`
+        ? `${store.getters.imgPath}${this.item.poster_path}`
         : require('@/assets/images/poster-not-available.png');
     },
     mediaType(){
