@@ -22,9 +22,9 @@ $ npm run serve
 ## Node & npm versions
 
 ```
-$ node version 15.14.0
+$ node version 14.17.6
 
-$ npm version 7.7.6
+$ npm version 6.14.15
 ```
 
 ## Api collection
